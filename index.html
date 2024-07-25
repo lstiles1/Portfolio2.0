@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Liam Stiles Portfolio</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./styles.css">
+	<script src="./scripts.js"></script>
+	<link rel="icon" type="image/jpg" href="./imgs/bitmoji.png">
+</head>
+<body>
+	<header>
+		<a href="#" class="logo-holder">
+			<div class="logo">L</div>
+			<div class="logo-text">Liam Stiles</div>
+		</a>
+		<nav>
+			<ul id="menu">
+				<li>
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="#about-me">About Me</a>
+				</li>
+				<li>
+					<a href="#projects">Projects</a>
+				</li>
+				<li>
+					<a href="mailto:lstiles00@gmail.com" class="button">Contact Me</a>
+				</li>
+			</ul>
+			<a href="#" class="mobile-toggle" onClick="toggleMobileMenu();">
+				<svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+					<path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h10"/>
+				</svg>
+			</a>
+		</nav>
+	</header>
+	<main>
+		<section class="hero container">
+			<div class="hero-blue">
+				<div>
+					<h1><small>Hi I'm</small>
+						Liam Stiles
+					</h1>
+					<p> I'm a full-stack developer in the San Francisco Bay Area with an interest in AI.
+					</p>
+					<div class="call-to-action">
+						<a href="./Sample_Resume_Template.pdf" class="button black">
+							View Resume
+						</a>
+						<a href="mailto:lstiles00@gmail.com" class="button white">
+							Contact Me
+						</a>
+					</div>
+					<div class="social-links">
+						<a href="https://github.com/lstiles1" target="_blank">
+							<img src="./imgs/github.png" alt="GitHub" width="48" />
+						</a>
+						<a href="https://linkedin.com/in/liam-stiles" target="_blank">
+							<img src="./imgs/linkedin.png" alt="LinkedIn" width="48" />
+						</a>
+					</div>
+				</div>
+			</div>
+			<div class="hero-yellow">
+				<img src="./imgs/bitmoji.png" alt="Liam Stiles Bitmoji" width="100%" />
+			</div>
+		</section>
+		<section class="logos container">
+                <div class="logos-holder">
+					<img src="./imgs/html.png" alt="HTML" width="128" />
+					<img src="./imgs/css.png" alt="CSS" width="128" />
+					<img src="./imgs/javascript.png" alt="JS" width="128" />
+					<img src="./imgs/typescript.png" alt="TypeScript" width="128" />
+					<img src="./imgs/sass.png" width="128" alt="Sass" />
+					<img src="./imgs/react.png" width="128" alt="React" />
+					<img src="./imgs/nextjs.png" width="128" alt="Next JS" />
+					<img src="./imgs/azure.png" width="128" alt="Azure" />
+					<img src="./imgs/vscode.png" width="128" alt="VS Code" />
+					<img src="./imgs/python.png" width="128" alt="Python" />
+				</div>
+		</section>
+		<section id="about-me" class="skills container">
+			<h2>
+				<small>Get to Know</small>
+				About Me
+			</h2>
+			<div class="holder-blue">
+				<div class="left-column">
+					<h3>Frontend</h3>
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JavaScript</li>
+						<li>React</li>
+						<li>Angular</li>
+						<li>Vue</li>
+					</ul>
+					<h3>Backend</h3>
+					<ul>
+						<li>Node.js</li>
+						<li>Express</li>
+						<li>Python</li>
+						<li>Java</li>
+						<li>MongoDB</li>
+						<li>TypeScript</li>
+					</ul>
+				</div>
+				<div class="right-column">
+					<h3>A bit about me</h3>
+					<p>
+						Hi, I'm Liam, a full-stack engineer passionate about contributing to innovative projects and making a positive impact in the tech industry. I'm currently seeking new software development opportunities.
+					<p>
+						I'm motivated by using AI to solve everyday problems, such as resizing image dimensions for websites or creating mock-ups for my Etsy t-shirt shop. When I'm not coding, I enjoy playing piano, hiking in Marin County, watching Real Housewives, and sewing.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section id="projects" class="work-experience container">
+			<h2>
+				<small>Browse Recent</small>
+				Projects
+			</h2>
+			<div class="jobs">
+				<article>
+					<figure>
+						<div>
+							<img src="./imgs/project-1.png" alt="AI Photo Editor" width="100%" />
+							<figcaption>
+								AI Photo Editor
+							</figcaption>
+						</div>
+					</figure>
+					<h3>AI Photo Editor</h3>
+					<p>Full stack application to easily change image colors, backgrounds, dimensions and more using AI. </p>
+					<div class="call-to-action">
+						<a href="https://photocraft.vercel.app/" class="button black" target="_blank">
+							Live Demo
+						</a>
+						<a href="https://github.com/lstiles1/photocraft" class="button white" style="border: 2px solid black" target="_blank">
+							GitHub Code
+						</a>
+					</div>
+				</article>
+				<article>
+					<figure>
+						<div>
+							<img src="./imgs/project-2.png" alt="AI T-Shirt Customizer" width="100%" />
+							<figcaption>
+								AI T-Shirt Customizer
+							</figcaption>
+						</div>
+					</figure>
+					<h3>AI T-Shirt Customizer</h3>
+					<p>Create realistic 3D mock ups of T-shirt designs using file uploader or AI generation.</p>
+					<div class="call-to-action">
+						<a href="https://threads-app-ten-rosy.vercel.app/" class="button black" target="_blank">
+							Live Demo
+						</a>
+						<a href="https://github.com/lstiles1/threads_app" class="button white" style="border: 2px solid black" target="_blank">
+							GitHub Code
+						</a>
+					</div>
+				</article>
+				<article>
+					<figure>
+						<div>
+							<img src="./imgs/project-3.png" alt="Super Fan Social Media" width="100%" />
+							<figcaption>
+								Super Fan Social
+							</figcaption>
+						</div>
+					</figure>
+					<h3>Super Fan Social Media </h3>
+					<p>Full stack social media application for fans to join communities built with React, Node.js, Express.js, MongoDB.</p>
+					<div class="call-to-action">
+						<a href="https://threads-app-ten-rosy.vercel.app/" class="button black" target="_blank">
+							Live Demo
+						</a>
+						<a href="https://github.com/lstiles1/threads_app" class="button white" style="border: 2px solid black" target="_blank">
+							Github Code
+						</a>
+					</div>
+				</article>
+			</div>
+		</section>
+		
+		<section class="chatbot container">
+			<h2>
+				<small>
+					Get in Touch
+				</small>
+				Contact Me
+			</h2>
+			<div class="chatbot-blue">
+				<div class="chat-info">
+					<div class="call-to-action">
+						<a href="https://photocraft.vercel.app/" class="button black" target="_blank">
+							LinkedIn
+						</a>
+						<a href="https://github.com/lstiles1/photocraft" class="button white" style="border: 2px solid black" target="_blank">
+							Email Me
+						</a>
