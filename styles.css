@@ -520,9 +520,32 @@ h3 {
 						border:1px solid var(--base-100);
 					}
 				}
-				button {
-					border:none;
-					cursor:pointer;
+				.button {
+					display: inline-block;
+					padding: 10px 30px;
+					background-color: var(--blue);
+					color: var(--base-100);
+					border-radius: 10px;
+					transition: ease 0.3s all;
+					text-align: center;
+				}
+				.button.black {
+					background-color: black;
+					color: white;
+					&:hover {
+						background-color: var(--base-100);
+						color: var(--base);
+					}
+				}
+				
+				.button.white {
+					background-color: white;
+					color: black;
+					border: 2px solid black;
+					&:hover {
+						background-color: var(--base-100);
+						color: var(--base);
+					}
 				}
 			}
 		}
